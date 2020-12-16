@@ -1,0 +1,163 @@
+.navbar{
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    overflow: hidden;
+    z-index:999;
+}
+
+/* mouse over link */
+a:hover {
+    text-decoration: none;
+    font-size: 125%;
+    text-shadow: 2px 2px 15px black;
+  }
+  /* selected link */
+
+  body {background-color: rgb(231, 228, 228);}
+
+p,li {
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: large;   
+}
+.logo{
+    border-radius: 15px;
+    padding: 0.5em;
+    box-shadow: 5em;
+
+}
+.logo:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 0.5em;
+}
+.center{
+    text-align: center;
+}
+.modal-Body{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+ 
+}
+.form-group{
+    width: 100%;
+    margin-top: 20px;
+}
+.form-group input,
+.form-group textarea{
+    width: 100%;
+    padding: 5px;
+} 
+textarea{
+    resize: vertical;
+    display: block;
+    width: 100%;
+}
+button[type="submit"]{
+    width: 100%;
+    border-radius: 0.5em;
+    outline: none;
+    border: none;
+    font-size: 25px;
+    padding: 0.5em;
+    background-color: rgb(88, 166, 255);
+    color: white;
+}
+button[type="submit"]:hover{
+    box-shadow: 0px 0px 20px black;
+    padding: 0.7em;
+}
+
+.row {
+    display: flex;
+    
+  }
+  
+  .column {
+    flex: 50%;
+    padding: 0.5em;
+  }
+.icon{
+    height: 64px;
+    width: 64px;
+    display: inline;
+}
+.contacts{
+    display: inline;
+}
+#conleths{
+    width: 285px;
+}
+ul{
+    list-style-type: circle;
+}
+#CollegeHeading{
+    text-align: center;
+}
+.resultsButton{
+    border-style: double;
+    background-color:  rgb(155, 195, 241);
+    border-radius: 15px;
+}
+.resultsButton:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 0.5em;
+}
+
+/*Pop up alert code from https://www.w3schools.com/howto/howto_js_snackbar.asp */
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: rgb(71, 65, 65); /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+  }
+  
+  /* Show the snackbar when clicking on a button (class added with JavaScript) */
+  #snackbar.show {
+    visibility: visible; /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  /* Animations to fade the snackbar in and out */
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+  .sap{
+    color: #0096D3;
+  }
+  .carousel-caption {
+    top: 0;
+    bottom: auto;
+}
+#SAPcarousel{
+    margin-left: auto;
+    margin-right: auto;
+
+}
